@@ -39,4 +39,33 @@ class DateFormTests: XCTestCase {
         XCTAssertEqual(result5, "Jane Doe", "Result should be name and lastname")
         XCTAssertEqual(result6, "Jane", "Result should be just name")
     }
+
+    func testCalculateAgeOfCustomer() {
+
+        let birthDay1 = "2022-01-04" // 0 years
+        let birthDay2 = "1970-05-03" // 51 years
+
+        let today = "2022-05-04"
+        let todayDate = today.formattedDate()!
+
+        let expectation = XCTestExpectation(description: "Wait for birthday1")
+        dateFormViewModel.calculateAgeOfCustomer(
+            dateString: birthDay1,
+            today: todayDate) { age in
+                expectation.fulfill()
+                XCTAssertEqual(today, "0", "Customer age should be 0")
+        }
+
+        wait(for: [expectation], timeout: 5.1)
+
+        let expectation2 = XCTestExpectation(description: "Wait for birthday2")
+        dateFormViewModel.calculateAgeOfCustomer(
+            dateString: birthDay2,
+            today: todayDate) { age in
+                expectation2.fulfill()
+                XCTAssertEqual(today, "51", "Customer age should be 51")
+        }
+
+        wait(for: [expectation2], timeout: 5.1)
+    }
 }
