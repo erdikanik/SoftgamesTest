@@ -7,6 +7,16 @@
 
 import Foundation
 
-final class DateFormViewModel {
-    // TODO: Will be implemented
+protocol DateFormViewModelInterface {
+
+    // Concatenate name and lastname
+    func concatenateNames(firstName: String, lastName: String) -> String
+}
+
+final class DateFormViewModel: DateFormViewModelInterface {
+
+    func concatenateNames(firstName: String, lastName: String) -> String {
+        // TODO: Will be implemented
+        return ""
+    }
 }
