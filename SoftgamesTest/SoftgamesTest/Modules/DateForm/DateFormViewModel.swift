@@ -18,6 +18,11 @@ protocol DateFormViewModelInterface {
 
 final class DateFormViewModel: DateFormViewModelInterface {
 
+    private enum Constant {
+
+        static let calculatingCustomerAgeSeconds = 5.0
+    }
+
     func concatenateNames(firstName: String, lastName: String) -> String {
         let trimmedName = firstName.trimmingCharacters(in: .whitespacesAndNewlines)
         let trimmedLastName = lastName.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -28,6 +33,25 @@ final class DateFormViewModel: DateFormViewModelInterface {
     }
 
     func calculateAgeOfCustomer(dateString: String, today: Date, completion: @escaping (String) -> Void) {
-        // TODO: Will be implemented
+
+        guard let formattedDate = dateString.formattedDate() else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Constant.calculatingCustomerAgeSeconds) {
+                completion("")
+            }
+            return
+        }
+
+        let calendarDate = Calendar.current.dateComponents([.year], from: formattedDate, to: today)
+
+        guard let year = calendarDate.year else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Constant.calculatingCustomerAgeSeconds) {
+                completion("")
+            }
+            return
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + Constant.calculatingCustomerAgeSeconds) {
+            completion(String(year))
+        }
     }
 }

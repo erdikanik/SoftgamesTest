@@ -43,7 +43,7 @@ class DateFormTests: XCTestCase {
     func testCalculateAgeOfCustomer() {
 
         let birthDay1 = "2022-01-04" // 0 years
-        let birthDay2 = "1970-05-03" // 51 years
+        let birthDay2 = "1970-05-03" // 52 years
 
         let today = "2022-05-04"
         let todayDate = today.formattedDate()!
@@ -53,7 +53,7 @@ class DateFormTests: XCTestCase {
             dateString: birthDay1,
             today: todayDate) { age in
                 expectation.fulfill()
-                XCTAssertEqual(today, "0", "Customer age should be 0")
+                XCTAssertEqual(age, "0", "Customer age should be 0")
         }
 
         wait(for: [expectation], timeout: 5.1)
@@ -63,7 +63,7 @@ class DateFormTests: XCTestCase {
             dateString: birthDay2,
             today: todayDate) { age in
                 expectation2.fulfill()
-                XCTAssertEqual(today, "51", "Customer age should be 51")
+                XCTAssertEqual(age, "52", "Customer age should be 51")
         }
 
         wait(for: [expectation2], timeout: 5.1)
