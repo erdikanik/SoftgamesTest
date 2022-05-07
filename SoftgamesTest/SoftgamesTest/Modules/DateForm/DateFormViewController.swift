@@ -18,6 +18,7 @@ final class DateFormViewController: UIViewController {
         super.viewDidLoad()
         setupWebView()
         loadHtmlFile()
+        viewModel.requestNotificationPermission()
     }
 
     private func setupWebView() {
@@ -43,6 +44,7 @@ final class DateFormViewController: UIViewController {
 // MARK: WKScriptMessageHandler
 
 extension DateFormViewController: WKScriptMessageHandler {
+
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         guard let data = message.body as? [String: String] else { return }
 
@@ -60,6 +62,10 @@ extension DateFormViewController: WKScriptMessageHandler {
             let result = viewModel.concatenateNames(firstName: firstName, lastName: lastName)
             let jScriptCode = "document.getElementById('nameResult').textContent='\(result)';"
             webView.evaluateJavaScript(jScriptCode)
+        }
+
+        if data["notify"] != nil {
+            viewModel.scheduleNotification()
         }
     }
 }
