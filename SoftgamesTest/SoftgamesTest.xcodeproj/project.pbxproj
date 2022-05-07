@@ -16,6 +16,7 @@
 		87A56F8D28269C9E00C10C1B /* SoftgamesTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56F8C28269C9E00C10C1B /* SoftgamesTestTests.swift */; };
 		87A56F9728269C9E00C10C1B /* SoftgamesTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56F9628269C9E00C10C1B /* SoftgamesTestUITests.swift */; };
 		87A56F9928269C9E00C10C1B /* SoftgamesTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56F9828269C9E00C10C1B /* SoftgamesTestUITestsLaunchTests.swift */; };
+		87A56FA828269E2000C10C1B /* form.html in Resources */ = {isa = PBXBuildFile; fileRef = 87A56FA728269E2000C10C1B /* form.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		87A56F9228269C9E00C10C1B /* SoftgamesTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftgamesTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A56F9628269C9E00C10C1B /* SoftgamesTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftgamesTestUITests.swift; sourceTree = "<group>"; };
 		87A56F9828269C9E00C10C1B /* SoftgamesTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftgamesTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		87A56FA728269E2000C10C1B /* form.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = form.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		87A56F7428269C9B00C10C1B /* SoftgamesTest */ = {
 			isa = PBXGroup;
 			children = (
+				87A56FA628269E0200C10C1B /* Resources */,
 				87A56F7528269C9B00C10C1B /* AppDelegate.swift */,
 				87A56F7728269C9B00C10C1B /* SceneDelegate.swift */,
 				87A56F7928269C9B00C10C1B /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				87A56F9828269C9E00C10C1B /* SoftgamesTestUITestsLaunchTests.swift */,
 			);
 			path = SoftgamesTestUITests;
+			sourceTree = "<group>";
+		};
+		87A56FA628269E0200C10C1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87A56FA728269E2000C10C1B /* form.html */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A56FA828269E2000C10C1B /* form.html in Resources */,
 				87A56F8228269C9D00C10C1B /* LaunchScreen.storyboard in Resources */,
 				87A56F7F28269C9D00C10C1B /* Assets.xcassets in Resources */,
 				87A56F7D28269C9B00C10C1B /* Main.storyboard in Resources */,
