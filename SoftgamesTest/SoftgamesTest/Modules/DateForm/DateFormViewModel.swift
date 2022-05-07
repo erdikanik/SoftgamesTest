@@ -16,7 +16,11 @@ protocol DateFormViewModelInterface {
 final class DateFormViewModel: DateFormViewModelInterface {
 
     func concatenateNames(firstName: String, lastName: String) -> String {
-        // TODO: Will be implemented
-        return ""
+        let trimmedName = firstName.trimmingCharacters(in: .whitespacesAndNewlines)
+        let trimmedLastName = lastName.trimmingCharacters(in: .whitespacesAndNewlines)
+
+        let separateString = !trimmedName.isEmpty && !trimmedLastName.isEmpty ? " " : ""
+
+        return trimmedName + separateString + trimmedLastName
     }
 }
