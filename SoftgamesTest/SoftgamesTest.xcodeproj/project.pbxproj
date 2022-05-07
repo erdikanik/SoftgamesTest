@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		87A56F7628269C9B00C10C1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56F7528269C9B00C10C1B /* AppDelegate.swift */; };
 		87A56F7828269C9B00C10C1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56F7728269C9B00C10C1B /* SceneDelegate.swift */; };
-		87A56F7A28269C9B00C10C1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56F7928269C9B00C10C1B /* ViewController.swift */; };
 		87A56F7D28269C9B00C10C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A56F7B28269C9B00C10C1B /* Main.storyboard */; };
 		87A56F7F28269C9D00C10C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A56F7E28269C9D00C10C1B /* Assets.xcassets */; };
 		87A56F8228269C9D00C10C1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A56F8028269C9D00C10C1B /* LaunchScreen.storyboard */; };
-		87A56F8D28269C9E00C10C1B /* SoftgamesTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56F8C28269C9E00C10C1B /* SoftgamesTestTests.swift */; };
 		87A56F9728269C9E00C10C1B /* SoftgamesTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56F9628269C9E00C10C1B /* SoftgamesTestUITests.swift */; };
 		87A56F9928269C9E00C10C1B /* SoftgamesTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56F9828269C9E00C10C1B /* SoftgamesTestUITestsLaunchTests.swift */; };
 		87A56FA828269E2000C10C1B /* form.html in Resources */ = {isa = PBXBuildFile; fileRef = 87A56FA728269E2000C10C1B /* form.html */; };
+		87A56FB12826A03500C10C1B /* DateFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56FB02826A03500C10C1B /* DateFormViewController.swift */; };
+		87A56FB32826A07500C10C1B /* DateFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56FB22826A07500C10C1B /* DateFormViewModel.swift */; };
+		87A56FB52826A18A00C10C1B /* DateFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56FB42826A18A00C10C1B /* DateFormTests.swift */; };
+		87A56FB82826A2A800C10C1B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A56FB72826A2A800C10C1B /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,17 +42,19 @@
 		87A56F7228269C9B00C10C1B /* SoftgamesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftgamesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A56F7528269C9B00C10C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87A56F7728269C9B00C10C1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		87A56F7928269C9B00C10C1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87A56F7C28269C9B00C10C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87A56F7E28269C9D00C10C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A56F8128269C9D00C10C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87A56F8328269C9D00C10C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87A56F8828269C9E00C10C1B /* SoftgamesTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftgamesTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87A56F8C28269C9E00C10C1B /* SoftgamesTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftgamesTestTests.swift; sourceTree = "<group>"; };
 		87A56F9228269C9E00C10C1B /* SoftgamesTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftgamesTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A56F9628269C9E00C10C1B /* SoftgamesTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftgamesTestUITests.swift; sourceTree = "<group>"; };
 		87A56F9828269C9E00C10C1B /* SoftgamesTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftgamesTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		87A56FA728269E2000C10C1B /* form.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = form.html; sourceTree = "<group>"; };
+		87A56FB02826A03500C10C1B /* DateFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormViewController.swift; sourceTree = "<group>"; };
+		87A56FB22826A07500C10C1B /* DateFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormViewModel.swift; sourceTree = "<group>"; };
+		87A56FB42826A18A00C10C1B /* DateFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormTests.swift; sourceTree = "<group>"; };
+		87A56FB72826A2A800C10C1B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A56FB82826A2A800C10C1B /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,7 @@
 				87A56F8B28269C9E00C10C1B /* SoftgamesTestTests */,
 				87A56F9528269C9E00C10C1B /* SoftgamesTestUITests */,
 				87A56F7328269C9B00C10C1B /* Products */,
+				87A56FB62826A2A700C10C1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +107,10 @@
 		87A56F7428269C9B00C10C1B /* SoftgamesTest */ = {
 			isa = PBXGroup;
 			children = (
+				87A56FAE2826A01800C10C1B /* Modules */,
 				87A56FA628269E0200C10C1B /* Resources */,
 				87A56F7528269C9B00C10C1B /* AppDelegate.swift */,
 				87A56F7728269C9B00C10C1B /* SceneDelegate.swift */,
-				87A56F7928269C9B00C10C1B /* ViewController.swift */,
 				87A56F7B28269C9B00C10C1B /* Main.storyboard */,
 				87A56F7E28269C9D00C10C1B /* Assets.xcassets */,
 				87A56F8028269C9D00C10C1B /* LaunchScreen.storyboard */,
@@ -116,7 +122,7 @@
 		87A56F8B28269C9E00C10C1B /* SoftgamesTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				87A56F8C28269C9E00C10C1B /* SoftgamesTestTests.swift */,
+				87A56FB42826A18A00C10C1B /* DateFormTests.swift */,
 			);
 			path = SoftgamesTestTests;
 			sourceTree = "<group>";
@@ -136,6 +142,31 @@
 				87A56FA728269E2000C10C1B /* form.html */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		87A56FAE2826A01800C10C1B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				87A56FAF2826A02700C10C1B /* DateForm */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		87A56FAF2826A02700C10C1B /* DateForm */ = {
+			isa = PBXGroup;
+			children = (
+				87A56FB02826A03500C10C1B /* DateFormViewController.swift */,
+				87A56FB22826A07500C10C1B /* DateFormViewModel.swift */,
+			);
+			path = DateForm;
+			sourceTree = "<group>";
+		};
+		87A56FB62826A2A700C10C1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87A56FB72826A2A800C10C1B /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87A56F7A28269C9B00C10C1B /* ViewController.swift in Sources */,
+				87A56FB32826A07500C10C1B /* DateFormViewModel.swift in Sources */,
+				87A56FB12826A03500C10C1B /* DateFormViewController.swift in Sources */,
 				87A56F7628269C9B00C10C1B /* AppDelegate.swift in Sources */,
 				87A56F7828269C9B00C10C1B /* SceneDelegate.swift in Sources */,
 			);
@@ -280,7 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87A56F8D28269C9E00C10C1B /* SoftgamesTestTests.swift in Sources */,
+				87A56FB52826A18A00C10C1B /* DateFormTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
