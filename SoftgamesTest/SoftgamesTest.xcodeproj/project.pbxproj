@@ -19,6 +19,8 @@
 		87A56FB32826A07500C10C1B /* DateFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56FB22826A07500C10C1B /* DateFormViewModel.swift */; };
 		87A56FB52826A18A00C10C1B /* DateFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56FB42826A18A00C10C1B /* DateFormTests.swift */; };
 		87A56FB82826A2A800C10C1B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A56FB72826A2A800C10C1B /* WebKit.framework */; };
+		87A56FBB2826C15800C10C1B /* String+DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56FBA2826C15800C10C1B /* String+DateExtension.swift */; };
+		87A56FBD2826C1DF00C10C1B /* StringDateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56FBC2826C1DF00C10C1B /* StringDateExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		87A56FB22826A07500C10C1B /* DateFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormViewModel.swift; sourceTree = "<group>"; };
 		87A56FB42826A18A00C10C1B /* DateFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormTests.swift; sourceTree = "<group>"; };
 		87A56FB72826A2A800C10C1B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		87A56FBA2826C15800C10C1B /* String+DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DateExtension.swift"; sourceTree = "<group>"; };
+		87A56FBC2826C1DF00C10C1B /* StringDateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDateExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		87A56F7428269C9B00C10C1B /* SoftgamesTest */ = {
 			isa = PBXGroup;
 			children = (
+				87A56FB92826C14500C10C1B /* Extensions */,
 				87A56FAE2826A01800C10C1B /* Modules */,
 				87A56FA628269E0200C10C1B /* Resources */,
 				87A56F7528269C9B00C10C1B /* AppDelegate.swift */,
@@ -123,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				87A56FB42826A18A00C10C1B /* DateFormTests.swift */,
+				87A56FBC2826C1DF00C10C1B /* StringDateExtensionTests.swift */,
 			);
 			path = SoftgamesTestTests;
 			sourceTree = "<group>";
@@ -167,6 +173,14 @@
 				87A56FB72826A2A800C10C1B /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87A56FB92826C14500C10C1B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				87A56FBA2826C15800C10C1B /* String+DateExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87A56FB32826A07500C10C1B /* DateFormViewModel.swift in Sources */,
+				87A56FBB2826C15800C10C1B /* String+DateExtension.swift in Sources */,
 				87A56FB12826A03500C10C1B /* DateFormViewController.swift in Sources */,
 				87A56F7628269C9B00C10C1B /* AppDelegate.swift in Sources */,
 				87A56F7828269C9B00C10C1B /* SceneDelegate.swift in Sources */,
@@ -312,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A56FBD2826C1DF00C10C1B /* StringDateExtensionTests.swift in Sources */,
 				87A56FB52826A18A00C10C1B /* DateFormTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
