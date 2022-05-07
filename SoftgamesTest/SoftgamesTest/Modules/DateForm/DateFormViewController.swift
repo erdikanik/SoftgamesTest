@@ -12,6 +12,7 @@ import WebKit
 final class DateFormViewController: UIViewController {
 
     private var webView: WKWebView!
+    private let viewModel = DateFormViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,11 +47,19 @@ extension DateFormViewController: WKScriptMessageHandler {
         guard let data = message.body as? [String: String] else { return }
 
         if let date = data["date"] {
-            // TODO: Date operations
+            let jScriptCode = "document.getElementById('dateResult').textContent='calculating...';"
+            webView.evaluateJavaScript(jScriptCode)
+
+            viewModel.calculateAgeOfCustomer(dateString: date, today: Date()) { [weak self] age in
+                let jScriptCode = "document.getElementById('dateResult').textContent='\(age)';"
+                self?.webView.evaluateJavaScript(jScriptCode)
+            }
         }
 
         if let firstName = data["name"], let lastName = data["lname"] {
-            // TODO: Name operations
+            let result = viewModel.concatenateNames(firstName: firstName, lastName: lastName)
+            let jScriptCode = "document.getElementById('nameResult').textContent='\(result)';"
+            webView.evaluateJavaScript(jScriptCode)
         }
     }
 }
