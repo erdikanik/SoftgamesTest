@@ -21,6 +21,7 @@
 		87A56FB82826A2A800C10C1B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A56FB72826A2A800C10C1B /* WebKit.framework */; };
 		87A56FBB2826C15800C10C1B /* String+DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56FBA2826C15800C10C1B /* String+DateExtension.swift */; };
 		87A56FBD2826C1DF00C10C1B /* StringDateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A56FBC2826C1DF00C10C1B /* StringDateExtensionTests.swift */; };
+		87A56FBF2826DA6E00C10C1B /* formMethods.js in Resources */ = {isa = PBXBuildFile; fileRef = 87A56FBE2826DA6E00C10C1B /* formMethods.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		87A56FB72826A2A800C10C1B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		87A56FBA2826C15800C10C1B /* String+DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DateExtension.swift"; sourceTree = "<group>"; };
 		87A56FBC2826C1DF00C10C1B /* StringDateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDateExtensionTests.swift; sourceTree = "<group>"; };
+		87A56FBE2826DA6E00C10C1B /* formMethods.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = formMethods.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				87A56FA728269E2000C10C1B /* form.html */,
+				87A56FBE2826DA6E00C10C1B /* formMethods.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				87A56FA828269E2000C10C1B /* form.html in Resources */,
 				87A56F8228269C9D00C10C1B /* LaunchScreen.storyboard in Resources */,
 				87A56F7F28269C9D00C10C1B /* Assets.xcassets in Resources */,
+				87A56FBF2826DA6E00C10C1B /* formMethods.js in Resources */,
 				87A56F7D28269C9B00C10C1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

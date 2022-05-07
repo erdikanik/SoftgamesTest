@@ -4,22 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <script type="text/javascript">
-    function submitNames() {
-      var message = {
-        name: document.getElementById("fname").value,
-        lname: document.getElementById("lname").value
-      };
-      window.webkit.messageHandlers.observer.postMessage(message);
-    }
+  <script src="formMethods.js"></script>
 
-    function submitDates() {
-      var message = {
-        date: document.getElementById("birthday").value,
-      };
-      window.webkit.messageHandlers.observer.postMessage(message);
-    }
-  </script>
 </head>
 
 <body>
@@ -33,6 +19,7 @@
     <input type="date" id="birthday" name="birthday"><br><br>
     <button id="sync" onclick="submitNames()">Sync</button>
     <button id="async" onclick="submitDates()">Async</button>
+    <br><br><button id="notify" onclick="notify()">Send Notification</button>
     <br><br>Name Result:
     <span id="nameResult">
       <b></b>
