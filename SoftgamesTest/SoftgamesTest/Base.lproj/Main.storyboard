@@ -15,24 +15,8 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRh-Zl-QZ7">
-                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="CRh-Zl-QZ7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="69o-LH-5Ag"/>
-                            <constraint firstItem="CRh-Zl-QZ7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ssm-lq-7kG"/>
-                            <constraint firstItem="CRh-Zl-QZ7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="YrE-bB-kUZ"/>
-                            <constraint firstItem="CRh-Zl-QZ7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="g3r-Rl-1Fw"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
